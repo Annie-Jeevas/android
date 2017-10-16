@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textBoxWidth">200dp</dimen>
-    <dimen name="squareButtonWidth">64dp</dimen>
+    <dimen name="squareButtonWidth">52dp</dimen>
+    <dimen name="bigSquareButtonWidth">104dp</dimen>
 </resources>

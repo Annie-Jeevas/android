@@ -11,11 +11,22 @@
     <style name="numberButton">
         <item name="android:layout_width">@dimen/squareButtonWidth</item>
         <item name="android:layout_height">@dimen/squareButtonWidth</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item name="android:layout_marginTop">8dp</item>
         <item name="android:background">@drawable/button_primary_selector</item>
+        <item name="android:onClick">buttonClick</item>
+    </style>
+    <style name="operationButton">
+        <item name="android:layout_width">@dimen/squareButtonWidth</item>
+        <item name="android:layout_height">@dimen/squareButtonWidth</item>
+        <item name="android:background">@drawable/operation_button</item>
+        <item name="android:textColor">@color/colorLightPrimary</item>
+        <item name="android:onClick">buttonClick</item>
+    </style>
+    <style name="equalsButton">
+        <item name="android:layout_width">@dimen/bigSquareButtonWidth</item>
+        <item name="android:layout_height">@dimen/bigSquareButtonWidth</item>
+        <item name="android:background">@drawable/operation_button</item>
+        <item name="android:textColor">@color/colorLightPrimary</item>
+        <item name="android:onClick">buttonClick</item>
     </style>
 
 </resources>
