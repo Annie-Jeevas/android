@@ -1,7 +1,9 @@
 package android.anna.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     String operation;
     TextView editText;
     TextView firstValueText;
+
+    String TAG = "INFO: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
             if (editText.getText().length() <= 8)
                 editText.setText(editText.getText().toString() + button.getText().toString());
         }
+
+    }
+
+    public void bigRedButtonClick(View view) {
+        Log.d(TAG, this.getClass().toString() + ": In bigRedButtonClick()");
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+
 
     }
 }
