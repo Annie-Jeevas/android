@@ -96,7 +96,5 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, this.getClass().toString() + ": In bigRedButtonClick()");
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
-
-
     }
 }
