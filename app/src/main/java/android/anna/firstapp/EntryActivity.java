@@ -73,6 +73,12 @@ public class EntryActivity extends AppCompatActivity {
         fillTable(table, clients);
     }
 
+    public void onButtonClearClick(View view){
+        Log.d(LOG_TAG, "onButtonClearClick");
+        int clearCount = db.delete("clients",null,null);
+        Log.d(LOG_TAG, "Delete rows: "+ clearCount);
+        fillTable(table, new ArrayList<Client>());
+    }
     private static void fillTable(TableLayout table, List<? extends IModel> list) {
         Log.d(LOG_TAG, "onButtonReadClick");
         table.removeAllViews();
