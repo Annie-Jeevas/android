@@ -14,6 +14,7 @@
         <item name="android:background">@drawable/button_primary_selector</item>
         <item name="android:onClick">buttonClick</item>
     </style>
+
     <style name="operationButton">
         <item name="android:layout_width">@dimen/squareButtonWidth</item>
         <item name="android:layout_height">@dimen/squareButtonWidth</item>
@@ -21,6 +22,7 @@
         <item name="android:textColor">@color/colorLightPrimary</item>
         <item name="android:onClick">buttonClick</item>
     </style>
+
     <style name="equalsButton">
         <item name="android:layout_width">@dimen/bigSquareButtonWidth</item>
         <item name="android:layout_height">@dimen/bigSquareButtonWidth</item>
@@ -28,5 +30,14 @@
         <item name="android:textColor">@color/colorLightPrimary</item>
         <item name="android:onClick">buttonClick</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

@@ -97,4 +97,25 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
+    public void canvasButtonClick(View view) {
+        Log.d(TAG, this.getClass().toString() + ": In canvasButtonClick()");
+        Intent intent = new Intent(this, ColorActivity.class);
+        startActivity(intent);
+    }
+    public void canvas3ButtonClick(View view) {
+        Intent intent = new Intent(this, Color3Activity.class);
+        startActivity(intent);
+    }
+    public void canvas4ButtonClick(View view) {
+        Intent intent = new Intent(this, Color4Activity.class);
+        startActivity(intent);
+    }
+    public void canvas5ButtonClick(View view) {
+        Intent intent = new Intent(this, StarActivity.class);
+        startActivity(intent);
+    }
+    public void canvasTwoButtonClick(View view) {
+        Intent intent = new Intent(this, Color2Activity.class);
+        startActivity(intent);
+    }
 }

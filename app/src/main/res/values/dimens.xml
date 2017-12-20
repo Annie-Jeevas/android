@@ -3,4 +3,5 @@
     <dimen name="textBoxWidth">200dp</dimen>
     <dimen name="squareButtonWidth">52dp</dimen>
     <dimen name="bigSquareButtonWidth">104dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

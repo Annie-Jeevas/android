@@ -18,4 +18,5 @@
     <string name="clearSymbol">C</string>
     <string name="backspaceSymbol">←</string>
     <string name="equalsSymbol">=</string>
+    <string name="title_activity_color2">Color2Activity</string>
 </resources>

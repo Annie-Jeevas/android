@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity" />
-        <activity android:name=".EntryActivity"></activity>
+        <activity android:name=".EntryActivity" />
+        <activity android:name=".ColorActivity" />
+        <activity android:name=".Color2Activity" />
+        <activity android:name=".Color3Activity" />
+        <activity android:name=".Color4Activity" />
+        <activity android:name=".StarActivity"></activity>
     </application>
 
 </manifest>

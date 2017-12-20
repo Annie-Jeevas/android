@@ -9,10 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity implements SensorEventListener {
 
+    private static final float FIRST_LIGHT_BORDER = 1f;
+    private static final float SECOND_LIGHT_BORDER = 3f;
     TextView aX;
     TextView aY;
     TextView aZ;
@@ -29,6 +32,7 @@ public class SecondActivity extends AppCompatActivity implements SensorEventList
     Sensor lSensor;
 
     String TAG = "SECOND ACTIVITY";
+    float brightness;
 
     boolean created = false;
     boolean accuracyOK = false;
@@ -77,6 +81,41 @@ public class SecondActivity extends AppCompatActivity implements SensorEventList
             }
             if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
                 light.setText(Float.toString(event.values[0]));
+                switch ((int) event.values[0]) {
+                    case 0:
+                        brightness = 1F;
+                        break;
+                    case 1:
+                        brightness = 1F;
+                        break;
+                    case 2:
+                        brightness = 2F;
+                        break;
+                    case 3:
+                        brightness = 3F;
+                        break;
+                    case 4:
+                        brightness = 4F;
+                        break;
+                    case 5:
+                        brightness = 5F;
+                        break;
+                    case 6:
+                        brightness = 6F;
+                        break;
+                    case 7:
+                        brightness = 7F;
+                        break;
+                    case 8:
+                        brightness = 8F;
+                        break;
+                    default:
+                        brightness = 10F;
+
+                }
+                WindowManager.LayoutParams layout = getWindow().getAttributes();
+                layout.screenBrightness = brightness;
+                getWindow().setAttributes(layout);
             }
         }
     }
@@ -86,19 +125,19 @@ public class SecondActivity extends AppCompatActivity implements SensorEventList
         Log.d(TAG, "onAccuracyChanged");
         switch (accuracy) {
             case 0:
-                Log.d(TAG,"Unreliable");
+                Log.d(TAG, "Unreliable");
                 accuracyOK = false;
                 break;
             case 1:
-                Log.d(TAG,"Low Accuracy");
+                Log.d(TAG, "Low Accuracy");
                 accuracyOK = false;
                 break;
             case 2:
-                Log.d(TAG,"Medium Accuracy");
+                Log.d(TAG, "Medium Accuracy");
                 accuracyOK = false;
                 break;
             case 3:
-                Log.d(TAG,"High Accuracy");
+                Log.d(TAG, "High Accuracy");
                 accuracyOK = true;
                 break;
         }
