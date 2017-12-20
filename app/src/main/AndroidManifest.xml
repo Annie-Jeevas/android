@@ -22,7 +22,9 @@
         <activity android:name=".Color2Activity" />
         <activity android:name=".Color3Activity" />
         <activity android:name=".Color4Activity" />
-        <activity android:name=".StarActivity"></activity>
+        <activity android:name=".StarActivity" />
+        <activity android:name=".ZoomActivity" />
+        <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>

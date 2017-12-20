@@ -118,4 +118,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Color2Activity.class);
         startActivity(intent);
     }
+    public void canvasZoomButtonClick(View view) {
+        Intent intent = new Intent(this, ZoomActivity.class);
+        startActivity(intent);
+    }
+    public void canvasCameraButtonClick(View view) {
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
 }
