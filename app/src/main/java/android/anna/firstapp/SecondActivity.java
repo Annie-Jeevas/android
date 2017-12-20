@@ -122,7 +122,7 @@ public class SecondActivity extends AppCompatActivity implements SensorEventList
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        Log.d(TAG, "onAccuracyChanged");
+//        Log.d(TAG, "onAccuracyChanged");
         switch (accuracy) {
             case 0:
                 Log.d(TAG, "Unreliable");
